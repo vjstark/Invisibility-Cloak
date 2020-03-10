@@ -9,7 +9,7 @@ out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
 
 #reading from the webcam
 username = "admin"
-password2 = "Iconsense1234"
+password2 = ""
 ip = '192.168.1.7'
 port = "554"
 url = "rtsp://{}:{}@{}:{}/cam/realmonitor?channel=1&subtype=1".format(username, password2, ip, port)
