@@ -37,16 +37,6 @@ while (cap.isOpened()):
     # Convert the color space from BGR to HSV
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
-    # # Generate masks to detect red color
-    # lower_black = np.array([100,150,0])
-    # upper_black = np.array([140,255,255])
-    # mask1 = cv2.inRange(hsv, lower_black, lower_black)
-    #
-    # # Generate masks to detect red color
-    # lower_black = np.array([100,150,0])
-    # upper_black = np.array([140,255,255])
-    # mask2 = cv2.inRange(hsv, lower_black, lower_black)
-
     lower_red = np.array([0, 120, 50])
     upper_red = np.array([10, 255, 255])
     mask1 = cv2.inRange(hsv, lower_red, upper_red)
